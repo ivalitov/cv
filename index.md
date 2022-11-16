@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <html>
     <head>
         <h1>Hey dude</h1>
