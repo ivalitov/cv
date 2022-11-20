@@ -22,7 +22,7 @@ html, body {
   font-size: 100%;
 }
 
-p {
+p, .text {
   font-weight: 300;
   color: #4A4A4A;
 }
@@ -34,6 +34,12 @@ a, a:hover {
 
 hr {
   padding: 1rem 0;
+  border: 0;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+hr.thin {
+  padding: 0 0;
   border: 0;
   border-bottom: 1px solid var(--bg-color);
 }

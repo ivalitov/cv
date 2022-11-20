@@ -10,20 +10,35 @@ html, body {
   grid-template-columns: 1.05fr 320px 40% 2fr;
 }
 
-.job-title {
+.job__title {
   height: auto;
   display: flex;
   flex-grow: 1;
+  padding-bottom: 5px;
+  font-weight: 850;
 }
 
-.job-title p:nth-child(1) {
+.edu__title {
+  height: auto;
+  display: flex;
+  flex-grow: 1;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+
+.job__title *:nth-child(1), .edu__title *:nth-child(1) {
   flex-basis: 50%;
   text-align: left;
 }
 
-.job-title p:nth-child(2) {
+.job__title *:nth-child(2), .edu__title *:nth-child(2) {
   flex-basis: 50%;
   text-align: right;
+}
+
+.experience {
+  padding-top: 15px;
 }
 
 .wrapper {
