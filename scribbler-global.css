@@ -183,7 +183,7 @@ nav {
 }
 
 .menu {
-  margin: 0;
+  margin: 1rem 0rem;
   text-align: right;
   overflow: hidden;
   list-style: none;
