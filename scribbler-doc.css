@@ -7,7 +7,10 @@ html, body {
 /* layout */
 .header {
   border-bottom: 1px solid var(--code-bg-color);
-  grid-template-columns: 1.05fr 320px 40% 2fr;
+  display: flex;
+  justify-content: center;
+  margin-right: 28%;
+  margin-left: 15%;
 }
 
 .job__title {
@@ -57,6 +60,7 @@ html, body {
   font-size: 1.4em;
   grid-column: 2;
   padding-left: 10px;
+  flex-basis: 30%;
 }
 
 .logo__thin {
@@ -65,7 +69,7 @@ html, body {
 
 /* menu */
 .menu {
-  /* grid-template-columns: 1fr 180px 60% 1fr; */
+  flex-basis: 70%;
 }
 
 .menu__item {
@@ -141,12 +145,33 @@ html, body {
 @media (max-width: 820px) {
   aside.doc__nav.fixed {
     flex-basis: 13%;
-  } 
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    flex-basis: 55%;
+  }
+  .menu {
+      flex-basis: 45%;
+  }
+
 }
 
 @media (max-width: 750px) {
+  .logo {
+    flex-basis: auto;
+  }
+  .menu {
+      flex-basis: 65%;
+  }
+  .header {
+    margin-right: 6%;
+    margin-left: 6%;
+  }
   .wrapper {
     flex-direction: column;
+    width: 85%;
   }
   .doc__content {
     padding-left: 0;
